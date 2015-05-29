@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html ng-app="app">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+		<title></title>
+
+		<link href="lib/ionic/css/ionic.css" rel="stylesheet">
+		<link href="lib/ionic/css/ionicons.min.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+		<link href="lib/videogular/videogular.css" rel="stylesheet">
+
+		<link ng-href="{{theme}}" rel="stylesheet">
+
+
+		<!-- Dynamic css is loaded here by api -->
+		<style ng-bind-html="styles">
+		</style>
+
+		<!-- ionic/angularjs js -->
+		<script src="lib/ionic/js/ionic.bundle.js"></script>
+
+		<!-- cordova script (this will be a 404 during development) -->
+		<script src="cordova.js"></script>
+
+		<!-- app loader js -->
+		<script src="app.js"></script>
+
+		<!-- routes js -->
+		<script src="js/routes/routes.js"></script>
+
+		<!-- controller js -->
+		<script src="js/controllers/controllers.js"></script>
+		<script src="js/controllers/detail-controller.js"></script>
+		<script src="js/controllers/page-controller.js"></script>
+		<script src="js/controllers/component-controller.js"></script>
+		<script src="js/directives/directives.js"></script>
+		<script src="js/directives/map-directive.js"></script>
+
+		<!-- factory js -->
+		<script src="js/factory/template-factory.js"></script>
+		<script src="js/factory/data-factory.js"></script>
+
+		<!-- do not remove -->
+		<!--PUSHSCRIPTS-->
+
+		<!-- do not remove -->
+        <!--GOOGLEMAPSSCRIPT-->
+
+		<!-- filters js -->
+		<script src="js/filters/filters.js"></script>
+
+        <script type="text/javascript" src="lib/pg/pg-iad.js"></script>
+
+        <!-- Google Analytics -->
+		<script type="text/javascript" src="lib/pg/pg-analytics.js"></script>
+
+        <script>
+			document.addEventListener( 'deviceready', onDeviceReady, false );
+
+			var isOffline = 'onLine' in navigator && !navigator.onLine;
+
+			function onDeviceReady() {
+
+				if( navigator.splashscreen ) {
+					setTimeout(function() {
+						navigator.splashscreen.hide();
+					}, 2000);
+				}
+
+				gainit();
+
+				if( device.platform != 'Android' && StatusBar ) {
+					StatusBar.overlaysWebView(true);
+				}
+
+			}
+
+			function init() {
+				
+			}
+		</script>
+
+
+	</head>
+
+	<body onload="init();">
+		<ion-nav-view></ion-nav-view>
+
+		<script src="lib/videogular/videogular.js"></script>
+        <script src="lib/videogular/plugins/controls.js"></script>
+        <script src="lib/videogular/plugins/overlay-play.js"></script>
+        <script src="lib/videogular/plugins/poster.js"></script>
+        <script src="lib/videogular/plugins/buffering.js"></script>
+
+	</body>
+</html>

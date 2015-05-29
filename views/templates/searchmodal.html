@@ -1,0 +1,33 @@
+<div class="search-modal">
+	<ion-modal-view>
+
+		<ion-header-bar class="nav-title-slide-ios7 bar-reactor">
+
+			<form action="." class="search" ng-submit="noSubmit($event)">
+			<input id="search" class="search-bar" type="search" name="search" placeholder="Search" ng-keydown="$event.keyCode == 13 ? search(searchData.value) : null" ng-keyup="$event.keyCode != null ? search(searchData.value) : null" ng-model="searchData.value">
+			</form>
+			<h1></h1>
+			<div class="buttons close-button">
+                <button class="button button-icon icon ion-ios-close-empty" ng-click="closeSearchModal()"></button>
+			</div>
+		</ion-header-bar>
+
+		<ion-content>
+			<div ng-show="searchSpinner">
+				<div class="loader">
+					<i class="icon ion-loading-d"></i>
+				</div>
+			</div>
+			<div class="center no-data" ng-if="noSearchData" ng-bind-html="noSearchData"></div>
+			<ion-list class="list-list">
+				<ion-item ng-repeat="post in searchResults track by $index" class="list-item" href="#/app/{{detail}}/{{post.ID}}">
+
+					<h2 class="post-excerpt" ng-bind-html="post.title"></h2>
+					<p class="post-excerpt" ng-bind-html="post.excerpt | striptags"></p>
+
+				</ion-item>
+			</ion-list>
+		</ion-content>
+
+	</ion-modal-view>
+</div>

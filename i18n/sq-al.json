@@ -1,0 +1,16 @@
+[
+    {
+        "purchase_button": "Bleje",
+        "back_button": "Kthehu",
+        "offline_header": "Ju jeni i ç'kyçur",
+        "offline_body": "Funksionalitetin App do të jetë i kufizuar.",
+        "ptr_text": "Tërhiqe për të rifreskuar...",
+        "share_error_header": "Oops, shpërndarja nuk ka shkuar mirë.",
+        "share_error_body": "Ju lutem provoni përsëri..",
+        "no_data": "Nuk janë shfaqur gjitha të dhënat.",
+        "comment_status": "Komentet jane te ndalura.",
+        "woo_sale": "Shitje!",
+        "login_button": "Të Nënshkruar Në",
+        "logout_button": "Nënshkruajnë"
+    }
+]

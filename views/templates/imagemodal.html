@@ -1,0 +1,27 @@
+<div class="image-modal">
+	<ion-modal-view>
+	
+		<ion-header-bar>
+
+			<div class="buttons close-button">
+				    <button class="button button-icon icon ion-ios-close-empty" ng-click="closeImageModal()"></button>
+			</div>
+
+			<h1 class="title"></h1>
+			<div class="buttons">
+                <button ng-show="imageShare" class="button button-icon icon ion-ios-upload-outline" ng-click="shareImage('', modalImage)"></button>
+			</div>
+		</ion-header-bar>
+		<ion-content>
+
+			<div ng-show="!modalImage">
+				<div class="loader">
+					<i class="icon ion-loading-d"></i>
+				</div>
+			</div>
+	
+			<img ng-show="modalImage" class="modalImage" ng-src="{{modalImage}}">
+		</ion-content>
+		
+	</ion-modal-view>
+</div>

@@ -1,0 +1,19 @@
+<ion-view title='{{apptitle}}'>
+
+	<ion-nav-buttons side="left">
+		<button ng-if="!menuIcon" menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+	</ion-nav-buttons>
+
+	<ion-nav-buttons side="right">
+		<div ng-show="rightButtons" ng-bind-html="rightButtons | trust"></div>
+		<button ng-if="showSearchModal" class="button button-icon icon ion-ios-search-strong" ng-click="openSearch()"></button>
+	</ion-nav-buttons>
+
+	<ion-content class="has-header content-background" style="background-image: url({{pagebg}});">
+		<div ng-include="getSlider()"></div>
+		<div ng-if="isHome" ng-include="getHomePage()" class="{{viewClass}}"></div>
+		<div ng-if="!isHome" ng-include="getPage()" class="{{viewClass}}"></div>
+	</ion-content>
+
+</ion-view>
+

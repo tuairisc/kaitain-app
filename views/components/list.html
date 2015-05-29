@@ -1,0 +1,39 @@
+<ion-refresher
+	ng-show="spinner"
+	on-refresh="doRefresh()"
+	pulling-icon="ion-arrow-down-c"
+	spinner="{{loader | spinnerFilter}}">
+</ion-refresher>
+<div ng-show="!loading">
+	<div class="loader">
+		<ion-spinner icon="{{loader | spinnerFilter}}"></ion-spinner>
+	</div>
+</div>
+<div class="center no-data" ng-if="noData" ng-bind-html="noData"></div>
+<ion-list class="list-list">
+	<ion-item ng-repeat="post in posts track by $index" class="list-item" href="#/app/{{detail}}/{{post.ID}}">
+
+		<div ng-bind-html="post.do_api_action.list.above_title || ' ' | allow_html" compile-template></div>
+
+		<h2 class="post-excerpt" ng-bind-html="post.title"></h2>
+
+		<div ng-bind-html="post.do_api_action.list.below_title || ' ' | allow_html" compile-template></div>
+
+		<div class="post-category">
+			<span ng-repeat="term in post.terms.category" ng-bind-html="term.name | allow_html"></span>
+		</div>
+
+		<div ng-bind-html="post.do_api_action.list.above_excerpt || ' ' | allow_html" compile-template></div>
+
+		<p class="post-excerpt" ng-bind-html="post.excerpt | striptags"></p>
+
+		<div ng-bind-html="post.do_api_action.list.below_excerpt || ' ' | allow_html" compile-template></div>
+
+	</ion-item>
+</ion-list>
+<ion-infinite-scroll
+	ng-if="moreItems"
+	on-infinite="loadMoreItems()"
+	spinner="{{loader | spinnerFilter}}"
+	distance="5%">
+</ion-infinite-scroll>

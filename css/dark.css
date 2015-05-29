@@ -1,0 +1,45 @@
+.item-complex .item-content,
+.pin,
+.card,
+.item {
+	background-color: #393939;
+}
+
+body,
+.menu,
+.pane,
+.view,
+.cardlist-class,
+.card-class,
+.pinlist-class {
+	background-color: #181818;
+}
+
+.item {
+	border-color: #252525;
+	color: #e4e4e4;
+}
+
+.item p {
+	color: #b0b0b0;
+}
+
+h1, h2, h3, h4, h5, h6, h7, h8, h9, a {
+	color: #e4e4e4;
+}
+
+.item.active, .item.activated, .item-complex.active .item-content, .item-complex.activated .item-content, .item .item-content.active, .item .item-content.activated {
+	background-color: rgba(0, 0, 0, 0.12);
+}
+
+.pin .pin-header,
+.pin .pin-footer,
+.comment-header,
+.res-col-item:last-child,
+.product-slider {
+	border-color: #181818;
+}
+
+.productlist-2col .item-meta {
+	background: rgba(255, 255, 255, 0.06);
+}

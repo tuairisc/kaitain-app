@@ -1,0 +1,12 @@
+<ion-view title='{{title}}'>
+
+  <ion-nav-buttons side="right">
+   <button class="button button-icon icon ion-ios-upload-outline" ng-if="socialsharing" ng-click="shareThis(title,link)"></button>
+   <button class="button button-icon icon ion-ios-cart"  ng-if="product" ng-click="openBrowser(cartURL)"></button>
+  </ion-nav-buttons>
+
+  <ion-content class="has-header detail" ng-class="pageClass">
+  	<div ng-include="getPage()"></div>
+  </ion-content>
+
+</ion-view>

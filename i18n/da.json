@@ -1,0 +1,14 @@
+[  
+   {  
+      "purchase_button":"Køb",
+      "back_button":"Tilbage",
+      "offline_header":"Du er offline",
+      "offline_body":"App-funktionalitet er begrænset.",
+      "ptr_text":"Hent data for at genopfrisk...",
+      "share_error_header":"Ups, deling virkede ikke.",
+      "share_error_body":"Prøv venligst igen..",
+      "no_data":"Beklager - men der er ingenting at se her.",
+      "comment_status":"Beklager, men der er ikke mulighed for kommentere.",
+      "woo_sale":"Tilbud!"
+   }
+]

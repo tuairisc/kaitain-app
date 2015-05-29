@@ -1,0 +1,66 @@
+<ion-side-menus expose-aside-when="(min-width:769px)">
+	<div ng-init="loadAppData()"></div>
+	<ion-pane ion-side-menu-content drag-content="false">
+		<ion-nav-bar class="bar-tru nav-title-slide-ios7 bar-reactor">
+			<ion-nav-back-button class="button-clear"><i class="icon ion-ios-arrow-back"></i> {{ 'back_button' | i18n }}</ion-nav-back-button>
+		</ion-nav-bar>
+		<ion-nav-view name="mainContent" animation="slide-left-right"></ion-nav-view>
+	</ion-pane>
+
+	<ion-side-menu side="left">
+
+		<header class="bar-tru bar-reactor bar bar-header nav-bar">
+			<button ng-if="isUserLoggedIn" class="button button-icon icon ion-person" ng-click="loginModal()"></button>
+			<h1 class="title"></h1>
+		</header>
+
+		<ion-content class="has-header">
+			<ion-list>
+				<div ng-repeat="item in menus">
+					<div ng-if="item.divider" class="item item-divider">{{item.divider}}</div>
+					<div ng-repeat="links in item.items">
+						<ion-item nav-clear menu-close ng-click="menuID(links.page_id)" ng-class="menuItemClass" href="#/app/{{links.page_data.route}}/{{links.page_id}}">
+							<i ng-if="menuItemClass" class="icon" ng-class="links.icon"></i>
+							{{links.title}}
+							<span class="item-note" ng-bind-html="links.small_text"></span>
+						</ion-item>
+					</div>
+				</div>
+
+
+			</ion-list>
+
+			<div id="side-menu-below" class="padding">
+				<button ng-if="loginMenu && !isUserLoggedIn" class="button button-block button-small button-reactor" ng-click="loginModal()">{{ 'login_button' | i18n }}</button>
+				<button ng-if="loginMenu && isUserLoggedIn" class="button button-block button-small button-reactor" ng-click="logUserOut()">{{ 'logout_button' | i18n }}</button>
+			</div>
+
+		</ion-content>
+
+	</ion-side-menu>
+
+
+	<div ng-controller="audioCtrl as controller">
+		<div ng-if="showPlayer" class="videogular-container" style="position: absolute; bottom: 0; left: 0; right:0;">
+			<vg-file-title >{{fileTitle}}</vg-file-title>
+			<div>
+				<videogular vg-theme="controller.config.theme.url" class="videogular-container audio">
+					<vg-audio vg-src="controller.config.sources"></vg-audio>
+
+					<vg-controls>
+						<vg-play-pause-button></vg-play-pause-button>
+						<vg-timedisplay>{{ currentTime | date:'mm:ss' }}</vg-timedisplay>
+						<vg-scrubBar>
+							<vg-scrubbarcurrenttime></vg-scrubbarcurrenttime>
+						</vg-scrubBar>
+						<vg-timedisplay>{{ timeLeft | date:'mm:ss' }}</vg-timedisplay>
+						<vg-close>
+						<button class="iconButton level3" ng-click="ClosePlayer()"><i class="icon ion-close"></i></button>
+						</vg-close>
+					</vg-controls>
+				</videogular>
+			</div>
+		</div>
+	</div>
+
+</ion-side-menus>

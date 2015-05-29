@@ -1,0 +1,17 @@
+[
+    {
+        "purchase_button": "Acheter",
+        "back_button": "Retour",
+        "offline_header": "Vous êtes hors ligne",
+        "offline_body": "Les fonctionnalités de l'Appli seront limitées.",
+        "ptr_text": "Tirer pour rafraîchir...",
+        "share_error_header": "Oups, le partage ne s'est pas bien terminé.",
+        "share_error_body": "Veuillez essayer à nouveau...",
+        "no_data": "Désolé, mais il semble qu'il n'y ait rien à afficher ici.",
+        "comment_status": "Désolé, les commentaires sont fermés.",
+        "comment_text": "Commentaires",
+        "woo_sale": "Mettre en vente!",
+        "login_button": "Déconnexion",
+        "logout_button": "Connecter"
+    }
+]
