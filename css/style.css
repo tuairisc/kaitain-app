@@ -762,7 +762,6 @@ span.comment-button.icon {
 	background-color: rgba(0, 0, 0, 0.12);
 }
 
-
 /****** videogular ***/
 videogular vg-close {
 	display: table-cell;
@@ -771,16 +770,19 @@ videogular vg-close {
 	text-align: center;
 	cursor: pointer;
 }
+
 videogular vg-controls #controls-container {
 	opacity: 0.8 !important;
 	bottom: 0 !important;
 	height: 64px !important;
 	padding: 20px 0 0 0 !important;
 }
+
 videogular vg-scrubBarCurrentTime {
 	height: 10px !important;
 	margin-top: 17px !important;
 }
+
 .videogular-container vg-file-title {
 	position: absolute;
 	color: rgb(250, 245, 255);
