@@ -1,0 +1,18 @@
+[
+    {
+        "purchase_button": "Ceannaigh",
+        "back_button": "Ar aid",
+        "offline_header": "You are offline",
+        "offline_body": "App functionality will be limited.",
+        "ptr_text": "Pull to refresh...",
+        "share_error_header": "Oops, share didn/'t go through.",
+        "share_error_body": "Please try again...",
+        "no_data": "Sorry, there doesn't seem to be anything to display here.",
+        "comment_status": "Stádas do thráchtas: Ár mbrón, tá áis na dtráchtanna dúnta.",
+        "comment_text": "Tráchtanna",
+        "woo_sale": "Díolachán!",
+        "login_button": "Logáil Isteach",
+        "logout_button": "Logáil Amach",
+        "no_map": "Níorbh fhéidir an mapa a lódáil."
+    }
+]
