@@ -25,7 +25,8 @@
         }
     },
     "menus": {
-        "items": [{
+        "items": [
+        {
             "title": "Nuacht",
             "page_id": "18",
             "page_data": {
@@ -63,6 +64,48 @@
             "capability": null,
             "class": "",
             "parent_id": "0"
-        }]
+        },
+
+        {
+            "title": "Sp\u00f3rt",
+            "page_id": "18",
+            "page_data": {
+                "text_html": "",
+                "page_bg": null,
+                "page_bg_path": null,
+                "page_type": "medialist",
+                "route": "page\/medialist",
+                "slider_content": null,
+                "list_content": "posts",
+                "slider": "on",
+                "taxonomy_category": null,
+                "taxonomy_tag": null,
+                "taxonomy": null,
+                "post_type": null,
+                "category": "sport",
+                "tag": null,
+                "gallery_tag": null,
+                "sitepage_id": null,
+                "sitepost_id": null,
+                "detail": "card",
+                "sharing": "on",
+                "comments": null,
+                "map_name": null,
+                "map_address": null,
+                "form_id": null,
+                "iframe": null,
+                "search": null,
+                "placeholder": null,
+                "map_places": null
+            },
+            "icon": null,
+            "small_text": null,
+            "hidden": null,
+            "capability": null,
+            "class": "",
+            "parent_id": "0"
+        }
+        
+        ]
     }
 }
