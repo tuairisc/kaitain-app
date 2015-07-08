@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
-<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.tuairisc.app" version="1.0.2">
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.tuairisc.app" version="1.0.3">
    <name>Tuairisc.ie</name>
    <description>The latest news and views from all around the Irish-speaking world.</description>
    <author href="http://tuairisc.ie" email="mark@tuairisc.ie">Marcas Mag Riallghuis</author>
@@ -32,9 +32,8 @@
 	<preference name="AutoHideSplashScreen" value="false" />
 	<preference name="SplashScreenDelay" value="7000" />
 
-    <preference name="StatusBarOverlaysWebView" value="false"/>
-    <preference name="StatusBarBackgroundColor" value="#506572"/>
-    <preference name="StatusBarStyle" value="blacktranslucent" />
+    <preference name="StatusBarOverlaysWebView" value="true"/>
+    <preference name="StatusBarStyle" value="blackopaque" />
 
 	<preference name="keyboardDisplayRequiresUserAction" value="false" />
 	<preference name="ShowSplashScreenSpinner" value="false" />
