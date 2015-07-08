@@ -20,7 +20,7 @@
 	<gap:plugin name="org.apache.cordova.vibration" />
 	<gap:plugin name="org.apache.cordova.network-information" />
 	<!--ADDPUSH-DONOTREMOVE-->
-	<!-- <gap:plugin name="com.phonegap.plugin.statusbar" /> -->
+	<gap:plugin name="com.phonegap.plugin.statusbar" />
 	<gap:plugin name="nl.x-services.plugins.socialsharing" />
 	<gap:plugin name="com.adobe.plugins.gaplugin" version="2.4.0" />
 	<!--iAD-DONOTREMOVE-->
