@@ -32,6 +32,7 @@
 	<preference name="AutoHideSplashScreen" value="false" />
 	<preference name="SplashScreenDelay" value="7000" />
 	<preference name="StatusBarOverlaysWebView" value="true" />
+    <preference name="StatusBarStyle" value="lightcontent" />
 	<preference name="keyboardDisplayRequiresUserAction" value="false" />
 	<preference name="ShowSplashScreenSpinner" value="false" />
 	<preference name="DisallowOverscroll" value="true" />
