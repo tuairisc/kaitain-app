@@ -12,14 +12,14 @@
         "app_update_version": "2",
         "design": {
             "app_theme": "default",
-            "toolbar_background": "#ededed",
-            "toolbar_color": "#00ade2",
+            "toolbar_background": "#506572",
+            "toolbar_color": "#ffffff",
             "border_color": "",
             "view_background": "",
             "list_background": "",
             "text_color": "",
             "button_color": "#8c6900",
-            "button_background": "#ededed",
+            "button_background": "#506572",
             "custom_css": "",
             "spinner": ""
         }
