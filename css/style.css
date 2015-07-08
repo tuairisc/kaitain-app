@@ -582,8 +582,7 @@ p.product-excerpt {
 
 .product-gallery {
 	/* background: #ededed; */
-    /* background: #506572; */
-    background: #000;
+    background: #506572;
 	padding: 10px;
 	border-radius: 4px;
 }
