@@ -1,0 +1,7 @@
+.menu-left.item-complex, .menu-left.item {
+    background-color: transparent !important;
+}
+
+.menu-left {
+    background-color: red !important;
+}
