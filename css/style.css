@@ -1,3 +1,7 @@
+ion-side-menu {
+    dipslay: none;
+}
+
 .scroll li ul, .scroll li ol {
 	margin:0 1.5em;
 }
