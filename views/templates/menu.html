@@ -19,7 +19,7 @@
 				<div ng-repeat="item in menus">
 					<div ng-if="item.divider" class="item item-divider">{{item.divider}}</div>
 					<div ng-repeat="links in item.items">
-						<ion-item nav-clear menu-close ng-click="menuID(links.page_id)" ng-class="menuItemClass" href="#/app/{{links.page_data.route}}/{{links.page_id}}" class="tuairisc-transparent">
+						<ion-item nav-clear menu-close ng-click="menuID(links.page_id)" ng-class="menuItemClass" href="#/app/{{links.page_data.route}}/{{links.page_id}}" class="tuairisc-menuitem">
 							<i ng-if="menuItemClass" class="icon" ng-class="links.icon"></i>
 							{{links.title}}
 							<span class="item-note" ng-bind-html="links.small_text"></span>

@@ -2,11 +2,12 @@
     background-color: #506572;
 }
 
-.tuairisc-transparent {
+.tuairisc-menuitem {
     background: none !important;
+    border: 0 !important;
 }
 
-.tuairisc-transparent a {
+.tuairisc-menuitem a {
     background: none !important;
     color: #fff;
 }
