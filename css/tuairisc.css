@@ -3,6 +3,10 @@
 }
 
 .tuairisc-transparent {
-    color: #fff;
     background-color: transparent;
+}
+
+.tuairisc-transparent a {
+    background-color: transparent;
+    color: #fff;
 }
