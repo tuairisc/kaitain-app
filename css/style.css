@@ -1,3 +1,7 @@
+.side-menu {
+    display: none !important;
+}
+
 .scroll li ul, .scroll li ol {
 	margin:0 1.5em;
 }
@@ -239,7 +243,6 @@ input.search-bar {
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
-    display: none;
 }
 
 
