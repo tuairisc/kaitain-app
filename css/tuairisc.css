@@ -2,11 +2,11 @@
     background-color: #506572;
 }
 
-.tuairisc-transparent {
-    background: none;
+#tuairisc-transparent {
+    background: none !important;
 }
 
 .tuairisc-transparent a {
-    background: none;
+    background: none !important;
     color: #fff;
 }
