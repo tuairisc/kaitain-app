@@ -1,5 +1,5 @@
-ion-side-menu {
-    dipslay: none;
+.menu-left {
+    dipslay: none !important;
 }
 
 .scroll li ul, .scroll li ol {
