@@ -7,7 +7,7 @@
 		<ion-nav-view name="mainContent" animation="slide-left-right"></ion-nav-view>
 	</ion-pane>
 
-	<ion-side-menu side="left">
+	<ion-side-menu side="left" class="tuairic-background">
 
 		<header class="bar-tru bar-reactor bar bar-header nav-bar">
 			<button ng-if="isUserLoggedIn" class="button button-icon icon ion-person" ng-click="loginModal()"></button>
@@ -19,7 +19,7 @@
 				<div ng-repeat="item in menus">
 					<div ng-if="item.divider" class="item item-divider">{{item.divider}}</div>
 					<div ng-repeat="links in item.items">
-						<ion-item nav-clear menu-close ng-click="menuID(links.page_id)" ng-class="menuItemClass" href="#/app/{{links.page_data.route}}/{{links.page_id}}">
+						<ion-item nav-clear menu-close ng-click="menuID(links.page_id)" ng-class="menuItemClass" href="#/app/{{links.page_data.route}}/{{links.page_id}}" class="tuairisc-transparent">
 							<i ng-if="menuItemClass" class="icon" ng-class="links.icon"></i>
 							{{links.title}}
 							<span class="item-note" ng-bind-html="links.small_text"></span>

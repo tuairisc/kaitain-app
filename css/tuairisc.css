@@ -1,10 +1,8 @@
-.menu-left.item-content, .menu-left.item {
-    /* Thank you Reactor developers for horking so bad that I need to do this. */
-    background-color: transparent !important;
-    border: 0 !important;
-    color: #fff !important;
+.tuairisc-background {
+    background-color: #506572;
 }
 
-.menu-left {
-    background-color: #506572 !important;
+.tuairisc-transparent {
+    color: #fff;
+    background-color: transparent;
 }
