@@ -1,7 +1,10 @@
-.menu-left.item-complex, .item {
+.menu-left.item-content, .menu-left.item {
+    /* Thank you Reactor developers for horking so bad that I need to do this. */
     background-color: transparent !important;
+    border: 0 !important;
+    color: #fff !important;
 }
 
 .menu-left {
-    background-color: red !important;
+    background-color: #506572 !important;
 }
