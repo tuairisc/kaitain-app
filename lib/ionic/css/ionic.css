@@ -4235,6 +4235,10 @@ ion-tabs.tabs-color-active-dark .tab-item {
  * Side panel structure
  */
 .menu {
+    background-color: red;
+}
+
+.menu {
   position: absolute;
   top: 0;
   bottom: 0;
