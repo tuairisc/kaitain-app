@@ -11,3 +11,11 @@
     background: none !important;
     color: #fff;
 }
+
+.img.post-featured {
+    object-fit: cover;
+}
+
+div.wp-caption {
+    max-width: 100%;
+}
