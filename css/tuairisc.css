@@ -12,7 +12,7 @@
     color: #fff;
 }
 
-.img.post-featured {
+img.post-featured {
     object-fit: cover;
 }
 
