@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
-<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="ie.tuairisc.app" version="1.0.7">
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="ie.tuairisc.app" version="1.0.8">
    <name>Tuairisc.ie</name>
    <description>The latest news and views from all around the Irish-speaking world.</description>
    <author href="http://tuairisc.ie" email="mark@tuairisc.ie">Marcas Mag Riallghuis</author>
