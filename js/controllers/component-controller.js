@@ -19,7 +19,7 @@ app.controller('CommentsCtrl', function( $scope, $stateParams, DataLoader, $ioni
 	var apiUrl = api + '/posts/'+ $stateParams.postID + '/comments?_jsonp=JSON_CALLBACK';
 
 	var apiParams = {
-		'number': 10
+		'number': 30
 	};
 
 	DataLoader.getData( apiUrl, apiParams ).success(function(data) {
@@ -43,7 +43,7 @@ app.controller('CommentsCtrl', function( $scope, $stateParams, DataLoader, $ioni
 		var apiUrl = api + '/posts/'+ $stateParams.postID + '/comments?_jsonp=JSON_CALLBACK' + '&offset=' + pg;
 
 		var apiParams = {
-			'number': 10
+			'number': 30
 		};
 
 		DataLoader.getData( apiUrl, apiParams ).success(function(data) {
