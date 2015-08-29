@@ -13,9 +13,11 @@
 }
 
 img.post-featured {
+    /* The application cramps rectangular thumbnails into a square space. */
     object-fit: cover;
 }
 
 div.wp-caption {
+    /* Images with an attribute set can overflow the page width. */
     max-width: 100%;
 }

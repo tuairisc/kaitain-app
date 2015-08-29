@@ -14,9 +14,3 @@
 		</ion-item>
 	</ion-list>
 </div>
-<ion-infinite-scroll
-	ng-if="moreComments"
-	spinner="{{loader | spinnerFilter}}"
-	on-infinite="loadMoreComments()"
-	distance="5%">
-</ion-infinite-scroll>
