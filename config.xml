@@ -19,7 +19,7 @@
 	<gap:plugin name="org.apache.cordova.geolocation" />
 	<gap:plugin name="org.apache.cordova.vibration" />
 	<gap:plugin name="org.apache.cordova.network-information" />
-	<gap:plugin name="org.apache.cordova.statusbar" />
+	<!-- <gap:plugin name="org.apache.cordova.statusbar" /> -->
 
 	<!--ADDPUSH-DONOTREMOVE-->
 	<gap:plugin name="nl.x-services.plugins.socialsharing" />
@@ -34,6 +34,7 @@
 	<preference name="SplashScreenDelay" value="7000" />
 
     <preference name="StatusBarOverlaysWebView" value="true"/>
+    <preference name="StatusBarBackgroundColor" value="#000000" />
     <preference name="StatusBarStyle" value="lightcontent" /> 
 
 	<preference name="keyboardDisplayRequiresUserAction" value="false" />
