@@ -1,10 +1,31 @@
-app.filter('formatDate', function(){
-    return function( date ) {
-    	stringDate = new Date( date );
-        return stringDate.toDateString();
+app.filter('formatDate', function() {
+    return function(date) {
+        var outputDate = '';
+
+        var irishDays = [
+            'Dé Luain', 'Dé Máirt', 'Dé Céadaoin', 'Déardaoin',
+            'Dé hAoine', 'Dé Sathairn', 'Dé Domhnaigh'
+        ];
+
+        var irishMonths = [
+            'Eanair', 'Feabhra', 'Márta', 'Aibreán',
+            'Bealtaine', 'Meitheamh', 'Iúil', 'Lúnasa',
+            'Meán Fomhair', 'Deireadh Fomhair', 'Samhain', 'Nollaig'
+        ];
+
+    	date = new Date(date);
+
+        outputDate += irishDays[date.getDay() - 1];
+        outputDate += ', ';
+        outputDate += irishMonths[date.getMonth()];
+        outputDate += ' ';
+        outputDate += date.date;
+        outputDate += ' ';
+        outputDate += date.year;
+
+        return outputDate;
     };
 });
-
 
 app.filter('trusted', function ($sce, $sanitize) {
     return function (text) {
