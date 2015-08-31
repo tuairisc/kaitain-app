@@ -19,9 +19,9 @@ app.filter('formatDate', function() {
         outputDate += ', ';
         outputDate += irishMonths[date.getMonth()];
         outputDate += ' ';
-        outputDate += date.date;
+        outputDate += date.getDate();
         outputDate += ' ';
-        outputDate += date.year;
+        outputDate += date.getFullYear();
 
         return outputDate;
     };
