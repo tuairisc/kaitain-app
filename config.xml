@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
-<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="ie.tuairisc.app" version="1.1.0">
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="ie.tuairisc.app" version="1.1.2">
    <name>Tuairisc.ie</name>
    <description>The latest news and views from all around the Irish-speaking world.</description>
    <author href="http://tuairisc.ie" email="mark@tuairisc.ie">Marcas Mag Riallghuis</author>
@@ -45,6 +45,11 @@
 	<icon src="res/icon/ios/icon-72.png" gap:platform="ios" width="72" height="72" />
 	<icon src="res/icon/ios/icon-57-2x.png" gap:platform="ios" width="114" height="114" />
 	<icon src="res/icon/ios/icon-72-2x.png" gap:platform="ios" width="144" height="144" />
+
+    <!-- Added by Mark -->
+	<icon src="res/icon/ios/icon-76.png" gap:platform="ios" width="76" height="76" />
+	<icon src="res/icon/ios/icon-120.png" gap:platform="ios" width="120" height="120" />
+	<icon src="res/icon/ios/icon-152.png" gap:platform="ios" width="152" height="152" />
 
 	<icon src="res/icon/android/icon-36-ldpi.png" gap:platform="android" gap:qualifier="ldpi" />
 	<icon src="res/icon/android/icon-48-mdpi.png" gap:platform="android" gap:qualifier="mdpi" />
